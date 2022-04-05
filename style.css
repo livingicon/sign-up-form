@@ -14,10 +14,11 @@
   /* font-family: ; */
 }
 
- .odin p a {
+ .hero-left,
+ .hero-left p a {
   color: white; 
-  text-decoration: none;
  }
+ 
 /* experimental below */
 input:invalid {
   border-color: red;
