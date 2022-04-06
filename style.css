@@ -1,14 +1,43 @@
+@font-face {
+  font-family: customFont;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+html body {
+  font-size: 1.2rem;
+}
+
 .content {
   display: flex;
+  /* justify-content: center; */
+  width: 100vw;
 }
 
 .hero-left {
   background: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+  flex-grow: 1;
+  /* position: relative;
+  position: 60vw;
+  min-width: 345px; */
+  text-align: center;
 }
 
-.odin {
+.odin-strip {
+  display: flex;
   background-color: black;
   opacity: 0.4;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 10px;
+  font-family: customFont;
+}
+
+.odin-strip img {
+  width: 5rem;
+  padding: 10px;
 }
 
 fieldset {
@@ -24,3 +53,11 @@ fieldset {
 input:invalid {
   border-color: red;
 }
+
+/* 
+Notes:
+
+1. text flexible, everything else px
+
+2. 
+*/
