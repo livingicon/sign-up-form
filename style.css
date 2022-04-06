@@ -9,7 +9,6 @@ html body {
 
 .content {
   display: flex;
-  /* justify-content: center; */
   width: 100vw;
 }
 
@@ -20,31 +19,42 @@ html body {
   min-width: 37vw;
   text-align: center;
   color: white;
+  position: relative;
 }
 
 .odin-strip {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
   align-items: center;
   justify-content: center;
+  top: 9rem;
+  background-color: rgba(0, 0, 0, 0.4);
   font-size: 1.7rem;
   font-family: customFont;
+  height: 5.6rem;
 }
 
 .odin-strip img {
   width: 3.5rem;
 }
 
-fieldset {
-  display: flex;
-}
-
 .hero-left p a {
-  color: white; 
+  color: lightgrey; 
 }
 
 .hero-left p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: .5rem;
   font-size: .7rem;
+  color: lightgrey;
+}
+
+fieldset {
+  display: flex;
 }
 
 /* experimental below */
