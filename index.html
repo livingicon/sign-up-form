@@ -18,12 +18,12 @@
       <p>Photo by <a href="http://unsplash.com/@haliewestphoto" target="_blank">Halie West</a>
         on <a href="https://unsplash.com/" target="_blank">Unsplash</a></p> 
     </div>
-    <div class="form-right">
+    <div class="sign-up">
       <div class="header">
         <div class="instructions">
           <p>This is not a real online service! You know you need something<br> 
             like this in your life to help you realize your deepest dreams.<br> 
-            Sign up now to get started.<br>
+            Sign up <em>now</em> to get started.<br>
           </p>
           <p>You know you want to.</p>
         </div>
@@ -31,31 +31,33 @@
       <div class="form">
         <fieldset>
           <legend>Let's do this!</legend>
-          <div>
-            <label for="firstName">FIRST NAME</label>
-            <input type="text" id="firstName" name="first_name" placeholder="Thor">
+          <div class="form-left">
+            <div>
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" id="firstName" name="first_name" placeholder="Thor">
+            </div>
+            <div>
+              <label for="user_email">EMAIL</label>
+              <input type="email" id="user_email" name="email" placeholder="you@example.com">
+            </div>
+            <div>
+              <label for="user_password">PASSWORD</label>
+              <input type="password" id="user_password" name="password" required>
+            </div>
           </div>
-
-          <div>
-            <label for="lastName">LAST NAME</label>
-            <input type="text" id="lastName" name="last_name" placeholder="Odinson">
-          </div>
-          <div>
-            <label for="user_email">EMAIL</label>
-            <input type="email" id="user_email" name="email" placeholder="you@example.com">
-          </div>
-          <div>
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-          </div>
-
-          <div>
-            <label for="user_password">PASSWORD</label>
-            <input type="password" id="user_password" name="password" required>
-          </div>
-          <div>
-            <label for="confirm_password">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm_password" name="password" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+          <div class="form-right">
+            <div>
+              <label for="lastName">LAST NAME</label>
+              <input type="text" id="lastName" name="last_name" placeholder="Odinson">
+            </div>
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+            <div>
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm_password" name="password" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+            </div>
           </div>
         </fieldset>
       </div>
@@ -70,11 +72,6 @@
 
 <!-- 
 Some Tips!
-
-1. 
-How you attack this project is mostly up to you, but 
-it is wise to begin by scaffolding out the structure of 
-the page, and then take the various sections one by one.
 
 2. 
 The area behind the “ODIN” logo is a div that has a dark, 

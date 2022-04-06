@@ -9,16 +9,17 @@
 .odin {
   background-color: black;
   opacity: 0.4;
-  color: white;
-  /* text-align: center; */
-  /* font-family: ; */
 }
 
- .hero-left,
- .hero-left p a {
+fieldset {
+  display: flex;
+}
+
+.hero-left,
+.hero-left p a {
   color: white; 
- }
- 
+}
+
 /* experimental below */
 input:invalid {
   border-color: red;
