@@ -5,18 +5,22 @@
 
 html body {
   font-size: 1.2rem;
+  margin: 0;
+  background-color: black;
 }
 
 .content {
   display: flex;
-  width: 100vw;
+  justify-content: center;
 }
 
 .hero-left {
   background: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
   height: 100vh;
-  min-width: 37vw;
+  max-width: 60vw;
+  display: flex;
+  min-width: 25%;
   text-align: center;
   color: white;
   position: relative;
@@ -28,7 +32,7 @@ html body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  top: 9rem;
+  top: 11rem;
   background-color: rgba(0, 0, 0, 0.4);
   font-size: 1.7rem;
   font-family: customFont;
@@ -41,6 +45,7 @@ html body {
 
 .hero-left p a {
   color: lightgrey; 
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero-left p {
@@ -51,21 +56,90 @@ html body {
   bottom: .5rem;
   font-size: .7rem;
   color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-fieldset {
+.sign-up {
+  background-color: rgb(250, 250, 250);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header,
+.create-button {
+  padding: 20px;
+  margin: 0px 10px;
+}
+
+.instructions {
+  font-size: .85rem;
+}
+
+.header {
+  padding-top: 75px;
+}
+
+.form {
+  background-color: white;
+  padding: 30px 30px 10px;
+  box-shadow: 0px 10px 5px -5px rgb(200, 200, 200);
+  color: rgb(88, 88, 88);
+}
+
+.form p {
+  font-size: 1.3rem;
+  color:rgb(65, 65, 65);
+  margin-top: -10px;
+}
+
+form {
   display: flex;
+
 }
 
-/* experimental below */
+label {
+  font-size: .6rem;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 2px 50px 10px 0px;
+  font-size: 1rem;
+}
+
 input:invalid {
   border-color: red;
+  border-radius: 3px;
+  border-style: solid;
 }
 
-/* 
-Notes:
+input:focus {
+  outline-color: rgb(93, 93, 198);
+  box-shadow: 0px 5px 10px rgb(200, 200, 200);
+}
 
-1. text flexible, everything else px
+button {
+  color: white;
+  background-color: #596D48;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border-radius: 7px;
+  border-style: none;
+  box-shadow: 0px 5px 10px rgb(200, 200, 200);
+  margin-bottom: 10px;
+}
 
-2. 
-*/
+.create-button {
+  margin-top: 10px;
+  font-size: .7rem;
+}
+
+.create-button a {
+  color: #596D48;
+  text-decoration: none;
+}

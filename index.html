@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sign-up-form</title>
-  <!-- link to fonts -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,37 +28,37 @@
         </div>
       </div>
       <div class="form">
-        <fieldset>
-          <legend>Let's do this!</legend>
+        <p>Let's do this!</p>
+        <form>
           <div class="form-left">
             <div>
               <label for="firstName">FIRST NAME</label>
-              <input type="text" id="firstName" name="first_name" placeholder="Thor">
+              <input type="text" id="firstName" name="first_name" placeholder="Thor" autocomplete="off">
             </div>
             <div>
               <label for="user_email">EMAIL</label>
-              <input type="email" id="user_email" name="email" placeholder="you@example.com">
+              <input type="email" id="user_email" name="email" placeholder="you@example.com" autocomplete="off">
             </div>
             <div>
               <label for="user_password">PASSWORD</label>
-              <input type="password" id="user_password" name="password" required>
+              <input type="password" class="error" id="user_password" name="password" autocomplete="off" required>
             </div>
           </div>
           <div class="form-right">
             <div>
               <label for="lastName">LAST NAME</label>
-              <input type="text" id="lastName" name="last_name" placeholder="Odinson">
+              <input type="text" id="lastName" name="last_name" placeholder="Odinson" autocomplete="off">
             </div>
             <div>
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" autocomplete="off">
             </div>
             <div>
               <label for="confirm_password">CONFIRM PASSWORD</label>
-              <input type="password" id="confirm_password" name="password" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+              <input type="password" id="confirm_password" name="password" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="error" autocomplete="off" required>
             </div>
           </div>
-        </fieldset>
+        </form>
       </div>
       <div class="create-button">
         <button type="submit">Create Account</button>
@@ -69,36 +68,3 @@
   </div>
 </body>
 </html>
-
-<!-- 
-Some Tips!
-
-2. 
-The area behind the “ODIN” logo is a div that has a dark, 
-but semi-transparent background color. This enhances the 
-readability of the text against the busy background image.
-
-3. 
-The color we’ve chosen for the ‘Create Account’ button is 
-similar to tones found in the background image. 
-Specifically, it is #596D48.
-
-4. 
-The inputs, by default have a very light border (#E5E7EB), 
-but we’ve included 2 variations. For starters, the 
-password inputs should be given an error class.
-
-5. 
-The other variation is the selected input, which should 
-have a blue border and subtle box-shadow. This can be 
-done with the :focus pseudo-class you’ve learned about in 
-an earlier lesson.
-
-6. 
-Do not worry about making your project look nice on 
-mobile, but DO resize your browser a little bit to make 
-sure that it’s not completely broken at different desktop 
-resolutions. 
-
-7. Credit photo still!
--->
